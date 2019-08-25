@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: #181818;
+    color:white;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+#img{
+    width:300px;
+}
+
+#logo{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+#wrapper{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:100vh;
+    justify-content: center;
+    flex:1;
+
+}
+#right{
+    flex:1;
+}
+
+#signin{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+#signin form{
+    width: 80%;
+    padding-bottom: 3rem;
+    dis
+}
+
+#signin .logo{
+    margin-bottom: 8vh;
+}
+
+#signin label{
+    font-size: 0.9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.textinput{
+    margin-bottom: 1.3rem;
+    width:100%;
+    border-radius:2px;
+    background: #181818;
+    border: 1px solid #555;
+    color:#ccc;
+    padding: o.5rem 1rem;
+    line-height: 1.3rem;   
+}
+
+.primarybtn{
+    padding:0.7rem 1rem;
+    display:block;
+    border:0;
+    border-radius:2px;
+    font-weight:500;
+    background:#f96816;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.8s;
+    width: 100%;
+}
+.primarybtn:hover{
+    background: #ff7b39;
+}
+
+.secondarybtn{
+    padding:0.7rem 1rem;
+    display:flex;
+    border:0;
+    border-radius:2px;
+    font-weight:500;
+    background:#f96816;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.8s;
+    justify-content: center;
+}
+
+#signin .secondarybtn,
+.or,
+.links{
+    width: 60%;
+    text-align: center;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#signin .links a{
+    color: white;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    display: block;
+}
+
+#signin .or{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+#signin .or .bar{
+    height: 1px;
+    border: none;
+    flex: auto;
+    background: white;
+    
+}
+
+.secondarybtn:hover{
+    background: #ff7b39;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width:1200px){
+    #left{
+        flex:4;
+    }
+    #right{
+        flex:6;
+    }
+}
