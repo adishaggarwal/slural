@@ -155,8 +155,23 @@ footer{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background: url('https://image.ibb.co/cO9Lxq/login-bg.jpg');
 }
-
+.btn{
+    border:1px solid white;
+    width: 300px;
+    text-decoration: none;
+    color: white;
+    align-self: center;
+}
+#mainfooter a{
+    color: #f96816;
+    text-decoration: none;
+}
+.btn:hover{
+    color: #f96816;
+    border:1px solid #f96816;
+}
 @media(min-width:1200px){
     #left{
         flex:4;
@@ -164,4 +179,18 @@ footer{
     #right{
         flex:6;
     }
+}
+
+@media(max-width:768px){
+    #right{
+        display: none;
+    }
+    body{   
+        overflow: auto;
+    }
+    #left{
+        justify-content: start;
+        margin-top: 2vh;
+    }
+
 }
